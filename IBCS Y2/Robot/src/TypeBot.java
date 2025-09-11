@@ -1,7 +1,7 @@
 import java.awt.*;
 import java.awt.event.KeyEvent;
 
-public class typeBot {
+public class TypeBot {
     public static void main(String[] args) throws AWTException, InterruptedException {
         Robot robot = new Robot();
 
@@ -31,7 +31,7 @@ public class typeBot {
         robot.keyRelease(KeyEvent.VK_TAB);
         Thread.sleep(1000);
 
-        //Step4: space to clickk the clear button
+        //Step4: space to click the clear button
         robot.keyPress(KeyEvent.VK_SPACE);
         robot.keyRelease(KeyEvent.VK_SPACE);
         Thread.sleep(500);
@@ -48,7 +48,7 @@ public class typeBot {
             if (Character.isUpperCase(c) || "!@#$%^&*()_+{}|:\"<>?".indexOf(c) != -1) {
                 robot.keyRelease(KeyEvent.VK_SHIFT);
             }
-            robot.delay(1000);
+            robot.delay(100);
         }
     }
 }
